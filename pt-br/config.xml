@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.1"
+        id="br.com.cookbook">
+
+    <name>CookBook</name>
+    <content src="local:///index.html" />
+    <author rim:copyright="2013"
+            href="http://twitter.com/eliasdevelop"
+            email = "@eliasdevelop">Humberto Elias</author>
+    <description>Aplicativo para adicionar e compartilhar receitas</description>
+    <access uri="*" subdomains="true" />
+
+    <icon src="icon.png"/>
+    <rim:splash src="splash-1280x768.jpg"/>
+    <rim:splash src="splash-720x720.jpg"/>    
+    
+    <feature id="blackberry.app">
+      <param name="orientation" value="portrait" />
+      <param name="websecurity" value="disable" />
+    </feature>
+
+    <feature id="blackberry.invoke" />
+    <feature id="blackberry.invoke.card" />
+    <feature id="blackberry.ui.cover" />
+    <feature id="blackberry.ui.dialog" />
+    <feature id="blackberry.ui.toast" />
+    <feature id="blackberry.ui.contextmenu" />
+    <feature id="blackberry.bbm.platform" />
+
+    <rim:permissions>
+        <rim:permit>bbm_connect</rim:permit>  
+    </rim:permissions>
+</widget>

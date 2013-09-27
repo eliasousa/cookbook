@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<div data-bb-type="screen"  data-bb-scroll-effect="off">
+	
+<div data-bb-type="title" data-bb-caption="Edit Recipe" data-bb-back-caption="Cancel" data-bb-action-caption="Edit" onactionclick="editReceita();">
+	</div>
+
+	<script src="js/main.js"></script>
+	<script src="js/database.js"></script>
+	
+
+	<div data-bb-type="pill-buttons">
+		<div data-bb-type="pill-button" data-bb-selected="true" onclick="selectGeral()">Main</div>
+		<div data-bb-type="pill-button" onclick="selectIngredientes()">Ingredients</div>
+		<div data-bb-type="pill-button" onclick="selectPreparo()">Preparation</div>
+	 </div>
+
+	<div data-bb-type="round-panel" id="geral"> 
+		<div data-bb-type="panel-header">Main</div>
+		<div data-bb-type="row">
+		   <div data-bb-type="label">Name of recipe</div>
+		   <input id="nome" type="text" placeholder="Type the name of recipe here" />
+	   	</div>
+		<div data-bb-type="row">
+		   <div data-bb-type="label">Preparation time (minutes)</div>
+		   <input id="tempoDePreparo" type="number" placeholder="Type the preparation time here"/>
+		</div>
+		<div data-bb-type="row">
+		   <div data-bb-type="label">Yield (portions)</div>
+		   <input id="rendimento" type="number" placeholder="Eg.: 2 portions"/>
+		</div>
+	</div>
+	
+	<div data-bb-type="round-panel" id="ing" style="display:none"> 
+		<div data-bb-type="panel-header">Ingredients</div>	
+		<div data-bb-type="row">
+		   <textarea id="ingredientes" cols="38" rows="20" style="font-size:40px;font-family:Arial;"></textarea>
+		</div>
+	</div>
+
+	<div data-bb-type="round-panel" id="preparo" style="display:none"> 
+		<div data-bb-type="panel-header">Preparation</div>		
+		<div data-bb-type="row">
+		   <div data-bb-type="label">Preparation</div>
+		   <textarea id="modoDePreparo" cols="38" rows="16" style="font-size:40px;font-family:Arial;"></textarea>
+		</div>
+		<div data-bb-type="row">
+		   <div data-bb-type="label">Additional information</div>
+		   <textarea id="infoAdicionais" cols="38" rows="4" style="font-size:40px;font-family:Arial;"></textarea>
+		</div>
+	</div>
+</div>

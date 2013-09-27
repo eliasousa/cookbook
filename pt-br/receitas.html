@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<div data-bb-type="screen" data-bb-effect="fade" data-bb-indicator="true">
+	
+	<div data-bb-type="title" data-bb-caption="CookBook" data-bb-accent-text="Pressione e segure para opções">
+	</div> 
+	
+	<script src="js/main.js"></script>
+	<script src="js/database.js"></script>
+
+	<div data-bb-type="menu">
+		<div data-bb-type="menu-item" data-bb-img="images/icons/info.png" onclick="bb.pushScreen('info.html', 'info');">Sobre</div>
+		<div data-bb-type="menu-item" data-bb-img="images/icons/bbm.png" onclick="Bbm.inviteToDownload();">Convidar</div>
+	</div>
+		
+	<div data-bb-type="image-list" id="listaReceitas" data-bb-header-justify="left" data-bb-context="true" data-bb-image-effect="fade" data-bb-image-placeholder="images/icons/receita.png">
+		<div data-bb-type="header">Minhas Receitas</div>
+		<!--DINAMICO -->
+	</div>
+			
+	<div id="contexto" data-bb-type="context-menu">
+      <div data-bb-type="action" data-bb-img="local:///images/icons/edit.png" onclick="bb.pushScreen('edit.html','edit', document.getElementById('contexto').menu.selected.selected);">Editar</div>
+      <div data-bb-type="action" data-bb-img="local:///images/icons/share.png" onclick="compartilharReceita(document.getElementById('contexto').menu.selected.selected);">Compartilhar Receita</div>
+      <div data-bb-type="action" data-bb-pin="true" data-bb-img="local:///images/icons/delete.png" onclick="deleteReceita(document.getElementById('contexto').menu.selected.selected);">Delete</div>
+  	</div>
+		
+	<div data-bb-type="action-bar">
+		<div onclick="bb.pushScreen('add.html', 'add');" data-bb-type="action" data-bb-style="button" data-bb-img="images/icons/add.png">Add Receita</div>
+	</div>
+</div>

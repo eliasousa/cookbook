@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<div data-bb-type="screen"  data-bb-scroll-effect="off">
+	
+<div data-bb-type="title" data-bb-caption="Edit Receita" data-bb-back-caption="Cancelar" data-bb-action-caption="Edit" onactionclick="editReceita();">
+	</div>
+
+	<script src="js/main.js"></script>
+	<script src="js/database.js"></script>
+	
+
+	<div data-bb-type="pill-buttons">
+		<div data-bb-type="pill-button" data-bb-selected="true" onclick="selectGeral()">Geral</div>
+		<div data-bb-type="pill-button" onclick="selectIngredientes()">Ingredientes</div>
+		<div data-bb-type="pill-button" onclick="selectPreparo()">Preparo</div>
+	 </div>
+
+	<div data-bb-type="round-panel" id="geral"> 
+		<div data-bb-type="panel-header">Geral</div>
+		<div data-bb-type="row">
+		   <div data-bb-type="label">Nome da receita</div>
+		   <input id="nome" type="text" placeholder="Digite o nome da receita" />
+	   	</div>
+		<div data-bb-type="row">
+		   <div data-bb-type="label">Tempo de preparo (minutos)</div>
+		   <input id="tempoDePreparo" type="number" placeholder="Digite o tempo de preparo"/>
+		</div>
+		<div data-bb-type="row">
+		   <div data-bb-type="label">Rendimento (porções)</div>
+		   <input id="rendimento" type="number" placeholder="Digite o rendimento(Ex. 2 porções)"/>
+		</div>
+	</div>
+	
+	<div data-bb-type="round-panel" id="ing" style="display:none"> 
+		<div data-bb-type="panel-header">Ingredientes</div>	
+		<div data-bb-type="row">
+		   <textarea id="ingredientes" cols="38" rows="20" style="font-size:40px;font-family:Arial;"></textarea>
+		</div>
+	</div>
+
+	<div data-bb-type="round-panel" id="preparo" style="display:none"> 
+		<div data-bb-type="panel-header">Preparo</div>		
+		<div data-bb-type="row">
+		   <div data-bb-type="label">Modo de preparo</div>
+		   <textarea id="modoDePreparo" cols="38" rows="16" style="font-size:40px;font-family:Arial;"></textarea>
+		</div>
+		<div data-bb-type="row">
+		   <div data-bb-type="label">Informações adicionais</div>
+		   <textarea id="infoAdicionais" cols="38" rows="4" style="font-size:40px;font-family:Arial;"></textarea>
+		</div>
+	</div>
+</div>
