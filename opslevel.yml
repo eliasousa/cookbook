@@ -1,0 +1,14 @@
+---
+version: 1
+service:
+  name: Cookbook
+  lifecycle: 
+  tier: tier_1
+  product: 
+  owner: new_owner
+  language: javascript
+  framework:
+  description: App to share recipes and other information about the preparation and cooking of food
+  aliases: 
+  tags: 
+  repositories:
