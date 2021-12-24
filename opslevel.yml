@@ -10,7 +10,5 @@ service:
   framework:
   description: App to share recipes and other information about the preparation and cooking of food
   aliases: 
-  tags: 
-  - key: dummy
-    value: 1
+  tags:
   repositories:
